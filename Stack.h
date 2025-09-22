@@ -27,7 +27,7 @@ public:
 
     // Returns the top element of the stack
     T top() {
-
+        return container.back();
     }
 
     // Returns true if stack is empty, else false
