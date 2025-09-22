@@ -8,6 +8,9 @@ int main() {
     pushTest.push(6);
     pushTest.push(7);
     pushTest.print();
+    pushTest.pop();
+    std::cout << "\n";
+    pushTest.print();
 
 
     return EXIT_SUCCESS;
