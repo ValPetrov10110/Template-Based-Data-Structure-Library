@@ -16,19 +16,13 @@ private:
 
 public:
     // Inserts an element into the stack
-    void push(const T& a) {
-        container.push_back(a);
-    }
+    void push(const T& a) { container.push_back(a); }
 
     // Removes an element from the stack
-    void pop() {
-        container.pop_back();
-    }
+    void pop() { container.pop_back(); }
 
     // Returns the top element of the stack
-    const T& top() {
-        return container.back();
-    }
+    const T& top() { return container.back(); }
 
     // Returns true if stack is empty, else false
     // This is done via integers (1 = true; 0 = false)
@@ -42,9 +36,7 @@ public:
     }
 
     // Returns the size of the stack
-    size_t size() {
-        return container.size();
-    }
+    size_t size() { return container.size(); }
 
     // Iterates through the entirety of the data structure
     void print() {
