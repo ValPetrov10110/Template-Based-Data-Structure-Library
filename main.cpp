@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "Stack.h"
+#include "Queue.h"
 
 /*
  * Stack.h is fundamentally complete. Future additions are more specific
@@ -21,6 +22,19 @@ int main() {
     std::cout << "\n";
     pushTest.print();
     std::cout << "The top element is " << pushTest.top() << '\n';
+
+    Queue<int> myQ;
+    std::cout << "Is my Queue empty: " << myQ.isEmpty() << '\n';
+    myQ.push_back(6);
+    myQ.push_back(8);
+    myQ.push_back(12);
+    myQ.print();
+    std::cout << "\nThe value first in line is: " << myQ.front() << '\n';
+    std::cout << "The value last in line is: " << myQ.back() << '\n';
+    std::cout << "The size of the Queue is: " << myQ.size() << '\n';
+    std::cout << "Is my Queue empty: " << myQ.isEmpty() << '\n';
+    myQ.pop_front();
+    myQ.print();
 
 
     return EXIT_SUCCESS;
