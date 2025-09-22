@@ -31,8 +31,14 @@ public:
     }
 
     // Returns true if stack is empty, else false
+    // This is done via integers (1 = true; 0 = false)
     bool isEmpty() {
-
+        if (container.empty()) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     // Returns the size of the stack
