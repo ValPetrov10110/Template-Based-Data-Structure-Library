@@ -18,9 +18,7 @@ public:
     }
 
     // Returns the size of the Queue
-    size_t size() {
-
-    }
+    size_t size() { return container.size(); }
 
     // Returns the value in the front of the Queue
     const T& front() {
