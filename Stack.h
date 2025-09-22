@@ -22,7 +22,7 @@ public:
 
     // Removes an element from the stack
     void pop() {
-
+        container.pop_back();
     }
 
     // Returns the top element of the stack
