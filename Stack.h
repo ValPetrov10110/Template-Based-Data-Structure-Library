@@ -16,7 +16,7 @@ private:
 
 public:
     // Inserts an element into the stack
-    void push(T a) {
+    void push(const T& a) {
         container.push_back(a);
     }
 
@@ -43,7 +43,7 @@ public:
 
     // Returns the size of the stack
     size_t size() {
-
+        return container.size();
     }
 
     // Iterates through the entirety of the data structure
