@@ -21,14 +21,10 @@ public:
     size_t size() { return container.size(); }
 
     // Returns the value in the front of the Queue
-    const T& front() {
-
-    }
+    const T& front() { return container.back(); }
 
     // Returns the value in the back of the Queue
-    const T& back() {
-
-    }
+    const T& back() { return container.front(); }
 
     // Inserts an element in the back of the Queue
     void push_back(const T& a) { container.insert(container.begin(), a); }
