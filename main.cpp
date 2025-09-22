@@ -2,6 +2,10 @@
 #include <cstdlib>
 #include "Stack.h"
 
+/*
+ * Stack.h is fundamentally complete. Future additions are more specific
+ */
+
 int main() {
     Stack<int> pushTest;
     std::cout << "Stack Empty: " << pushTest.isEmpty() << '\n';
