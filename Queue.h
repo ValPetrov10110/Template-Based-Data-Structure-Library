@@ -31,12 +31,8 @@ public:
     }
 
     // Inserts an element in the back of the Queue
-    void push_back(const T& a) {
+    void push_back(const T& a) { container.insert(container.begin(), a); }
 
-    }
-
-    // Removes AND returns the first element in the Queue
-    const T& pop_front() {
-
-    }
+    // Removes the first element in the Queue
+    void pop_front() { container.pop_back(); }
 };
