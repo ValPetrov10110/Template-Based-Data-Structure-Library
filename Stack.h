@@ -26,7 +26,7 @@ public:
     }
 
     // Returns the top element of the stack
-    T top() {
+    const T& top() {
         return container.back();
     }
 
