@@ -4,7 +4,7 @@
  */
 
 #pragma once
-
+#include <iostream>
 #include <vector>
 
 template <typename T>
@@ -42,7 +42,11 @@ public:
 
     // Iterates through the entirety of the data structure
     void print() {
-        
+        typename std::vector<T>::iterator it;
+
+        for (it = container.end() - 1; it != container.begin() - 1; --it) {
+            std::cout << *it << "\n";
+        }
     }
 
 };
