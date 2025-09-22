@@ -9,7 +9,12 @@ private:
 public:
     // Checks to see if the Queue is empty
     bool isEmpty() {
-
+        if (container.empty()) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     // Returns the size of the Queue
