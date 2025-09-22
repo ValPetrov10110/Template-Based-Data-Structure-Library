@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <iostream>
 
 template <typename T>
 class Queue {
@@ -31,4 +32,13 @@ public:
 
     // Removes the first element in the Queue
     void pop_front() { container.pop_back(); }
+
+    // Iterates through the entirety of the data structure
+    void print() {
+        typename std::vector<T>::iterator it;
+
+        for (it = container.end() - 1; it != container.begin() - 1; --it) {
+            std::cout << *it << " ";
+        }
+    }
 };
