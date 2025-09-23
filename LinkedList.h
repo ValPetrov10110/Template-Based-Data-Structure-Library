@@ -22,7 +22,15 @@ public:
 
     // Add an element to the beginning of the list
     void addFirst(const T& a) {
+        if (isEmpty()) {
+            current->data = a;
+            current->next = nullptr;
+            tail = current;
+            head = current;
+        }
+        else {
 
+        }
     }
 
     // Add an element to the end of the list
