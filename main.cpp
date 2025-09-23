@@ -38,6 +38,11 @@ int main() {
     myQ.pop_front();
     myQ.print();
 
+    LinkedList<int> myList;
+    std::cout << "Is it empty?: " << myList.isEmpty() << '\n';
+    myList.addFirst(5);
+    std::cout << "Is it empty?: " << myList.isEmpty() << '\n';
+
 
     return EXIT_SUCCESS;
 }
