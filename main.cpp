@@ -2,9 +2,11 @@
 #include <cstdlib>
 #include "Stack.h"
 #include "Queue.h"
+#include "LinkedList.h"
 
 /*
  * Stack.h is fundamentally complete. Future additions are more specific
+ * Queue.h is fundamentally complete. Future additions are more specific
  */
 
 int main() {
