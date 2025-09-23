@@ -11,10 +11,9 @@ private:
 
 public:
 
-    // The constructor for the Linked List
-    LinkedList() {
-
-    }
+    Node* head = nullptr;
+    Node* tail = nullptr;
+    Node* current = new Node();
 
     // The destructor for the Linked List
     ~LinkedList() {
@@ -78,7 +77,12 @@ public:
 
     // Returns true/false is the Linked List is empty
     bool isEmpty() {
-
+        if (head == nullptr) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 
